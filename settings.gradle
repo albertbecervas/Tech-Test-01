@@ -1,0 +1,4 @@
+rootProject.name='Tech-Test-eD'
+include ':app'
+include ':base'
+include ':app-resources'

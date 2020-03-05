@@ -1,0 +1,14 @@
+apply plugin: 'com.android.application'
+apply from: "$rootDir/common-android.gradle"
+
+android {
+    defaultConfig {
+        applicationId 'com.abecerra.tech_test_ed'
+    }
+}
+
+dependencies {
+    def moduleDependencies = rootProject.ext.modules
+    implementation moduleDependencies.base
+    implementation moduleDependencies.appResources
+}
