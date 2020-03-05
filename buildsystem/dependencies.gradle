@@ -28,17 +28,6 @@ ext {
             dagger            : "com.google.dagger:dagger-compiler:2.15"
     ]
 
-    firebase = [
-            analytics  : "com.google.firebase:firebase-analytics:$firebase.analytics",
-            crashlytics: "com.google.firebase:firebase-crashlytics:$firebase.crashlytics"
-    ]
-
-    koin = [
-            koin          : "org.koin:koin-android:$koin.koin_version",
-            koin_scope    : "org.koin:koin-android-scope:$koin.koin_version",
-            koin_viewmodel: "org.koin:koin-android-viewmodel:$koin.koin_version"
-    ]
-
     dagger = [
             dagger                : "com.google.dagger:dagger:$dagger.dagger2_version",
             daggerAndroid         : "com.google.dagger:dagger-android:$dagger.dagger2_version",

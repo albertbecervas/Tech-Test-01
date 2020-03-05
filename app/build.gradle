@@ -11,4 +11,14 @@ dependencies {
     def moduleDependencies = rootProject.ext.modules
     implementation moduleDependencies.base
     implementation moduleDependencies.appResources
+
+    def daggerDependencies = rootProject.ext.dagger
+    implementation daggerDependencies.dagger
+    implementation daggerDependencies.daggerAndroid
+    implementation daggerDependencies.daggerAndroidSupport
+    kapt daggerDependencies.daggerAndroidProcessor
+    kapt daggerDependencies.daggerCompiler
+    annotationProcessor daggerDependencies.daggerCompiler
+    compileOnly daggerDependencies.javaxJsrApi
+    implementation daggerDependencies.javaxInject
 }
