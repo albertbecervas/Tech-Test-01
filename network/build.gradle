@@ -1,0 +1,15 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir/common-android.gradle"
+
+android {
+    buildTypes {
+        debug {
+            buildConfigField "String", "BASE_API_URL", BASE_API_URL
+        }
+    }
+}
+
+dependencies {
+    def retrofitDependencies = rootProject.ext.retrofit
+    implementation retrofitDependencies.retrofit
+}

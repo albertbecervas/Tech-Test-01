@@ -11,6 +11,11 @@ dependencies {
     def moduleDependencies = rootProject.ext.modules
     implementation moduleDependencies.base
     implementation moduleDependencies.appResources
+    implementation moduleDependencies.network
+
+    def retrofitDependencies = rootProject.ext.retrofit
+    implementation retrofitDependencies.retrofit
+    implementation retrofitDependencies.moshi
 
     def daggerDependencies = rootProject.ext.dagger
     implementation daggerDependencies.dagger

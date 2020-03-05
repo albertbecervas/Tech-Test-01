@@ -1,6 +1,7 @@
 package com.abecerra.tech_test_ed.di.component
 
 import com.abecerra.tech_test_ed.di.module.CoordinatorModule
+import com.abecerra.tech_test_ed.di.module.NetworkModule
 import com.abecerra.tech_test_ed.di.module.data.RepositoryModule
 import com.abecerra.tech_test_ed.di.module.domain.InteractorModule
 import com.abecerra.tech_test_ed.di.module.presentation.PresenterModule
@@ -11,7 +12,8 @@ import dagger.Component
 
 @Component(
     modules = [ViewModule::class, PresenterModule::class, RouterModule::class,
-        CoordinatorModule::class, InteractorModule::class, RepositoryModule::class]
+        CoordinatorModule::class, InteractorModule::class, RepositoryModule::class,
+        NetworkModule::class]
 )
 interface ViewComponent {
 
