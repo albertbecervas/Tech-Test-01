@@ -21,7 +21,9 @@ ext {
             junit        : "junit:junit:$testing.junit",
             android_junit: "androidx.test.ext:junit:$testing.android_junit",
             espresso     : "androidx.test.espresso:espresso-core:$testing.espresso",
-            mockito      : "org.mockito:mockito-core:$testing.mockito"
+            mockito      : "org.mockito:mockito-core:$testing.mockito",
+            fragment     : 'androidx.fragment:fragment-testing:1.2.2',
+            truth        : 'com.google.truth:truth:0.42'
     ]
 
     dagger = [
@@ -36,6 +38,6 @@ ext {
 
     retrofit = [
             retrofit: "com.squareup.retrofit2:retrofit:$retrofit.retrofit_version",
-            moshi: "com.squareup.retrofit2:converter-moshi:$retrofit.moshi_version"
+            moshi   : "com.squareup.retrofit2:converter-moshi:$retrofit.moshi_version"
     ]
 }

@@ -27,6 +27,7 @@ android {
         targetCompatibility = "8"
         sourceCompatibility = "8"
     }
+    kotlinOptions { jvmTarget = "1.8" }
 }
 
 dependencies {
@@ -45,4 +46,6 @@ dependencies {
     testImplementation testDependencies.junit
     androidTestImplementation testDependencies.android_junit
     androidTestImplementation testDependencies.espresso
+    debugImplementation testDependencies.fragment
+    androidTestImplementation testDependencies.truth
 }
