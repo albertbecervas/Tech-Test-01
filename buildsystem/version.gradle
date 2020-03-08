@@ -18,11 +18,17 @@ ext {
             constraintLayout: "1.1.3"
     ]
 
+    google = [
+            gson: "2.8.6"
+    ]
+
     testing = [
             junit        : "4.12",
             android_junit: "1.1.1",
             espresso     : "3.2.0",
-            mockito      : "3.0.0"
+            mockito      : "3.0.0",
+            fragment     : "1.2.2",
+            truth        : "0.42"
     ]
 
     dagger = [
